@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vasco da Gama - Página Animada</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #FFFFFF;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .animation-text {
+            font-size: 1.5em;
+            margin: 40px auto;
+            animation: colorChange 3s infinite;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: white;
+            }
+            50% {
+                color: #FF0000; /* cor vermelha da cruz do Vasco */
+            }
+            100% {
+                color: white;
+            }
+        }
+
+        .stadium {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 20px;
+            margin: 40px 0;
+            font-size: 1.2em;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+            display: inline-block;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            color: white;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        /* Animação de rotação do escudo */
+        .vasco-logo {
+            margin-top: 20px;
+            animation: rotateLogo 10s infinite linear;
+        }
+
+        @keyframes rotateLogo {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clube de Regatas Vasco da Gama</h1>
+    </header>
+
+    <!-- Escudo do Vasco girando -->
+    <img src="vasco.png" alt="Escudo do Vasco" class="vasco-logo" width="200">
+
+    <div class="animation-text">
+        Vasco, o Gigante da Colina!
+    </div>
+
+    <div class="stadium">
+        São Januário, a nossa casa!
+    </div>
+
+    <footer>
+        <p>© 2024 - Vasco da Gama</p>
+    </footer>
+</body>
+</html>
+
+
